@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.shoolmanager.Controllers.StudentController">
+   <children>
+      <Text fill="ORANGERED" strokeType="OUTSIDE" strokeWidth="0.0" text="Let's register students" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" top="15.0" />
+         </VBox.margin>
+      </Text>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+               <children>
+                  <Label text="E-mail" />
+                  <TextField fx:id="email" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter your e-mail" />
+                  <Label layoutX="10.0" layoutY="10.0" text="Password" />
+                  <PasswordField fx:id="password" promptText="Password" />
+                  <Label text="First name" />
+                  <TextField fx:id="firstName" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter your first name" />
+               </children>
+            </VBox>
+            <Separator orientation="VERTICAL">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </Separator>
+            <VBox layoutX="30.0" layoutY="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+               <children>
+                  <Label layoutX="10.0" layoutY="10.0" text="Last name" />
+                  <TextField fx:id="lastName" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter your last name" />
+                  <Label text="Date of birth" />
+                  <DatePicker fx:id="dateOfBirth" promptText="Enter your date of birth" />
+                  <Label text="Place of birth" />
+                  <TextField fx:id="placeOfBirth" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter your place of birth" />
+               </children>
+            </VBox>
+            <Separator layoutX="179.0" layoutY="30.0" orientation="VERTICAL">
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </HBox.margin>
+            </Separator>
+            <VBox layoutX="179.0" layoutY="30.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+               <children>
+                  <Label layoutX="10.0" layoutY="10.0" text="State" />
+                  <TextField fx:id="state" layoutX="10.0" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter the state" />
+                  <Label layoutX="10.0" layoutY="10.0" text="Classroom" />
+                  <TextField fx:id="classroomId" layoutX="10.0" layoutY="27.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" promptText="Enter the classroom id" />
+                  <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onSubmitUser" style="-fx-background-color: #FF4500;" text="Submit" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>
